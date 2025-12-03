@@ -1,0 +1,160 @@
+export interface Product {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  originalPrice?: number;
+  image: string;
+  category: string;
+  rating: number;
+  reviews: number;
+  inStock: boolean;
+  quantity?: number;
+}
+
+export const PRODUCTS: Product[] = [
+  {
+    id: '1',
+    name: 'Fresh Organic Apples',
+    description: 'Crispy and sweet red apples from local farms',
+    price: 4.99,
+    originalPrice: 6.99,
+    image: '🍎',
+    category: 'Fruits',
+    rating: 4.8,
+    reviews: 245,
+    inStock: true,
+  },
+  {
+    id: '2',
+    name: 'Whole Wheat Bread',
+    description: 'Freshly baked whole wheat bread',
+    price: 3.49,
+    image: '🍞',
+    category: 'Bakery',
+    rating: 4.6,
+    reviews: 189,
+    inStock: true,
+  },
+  {
+    id: '3',
+    name: 'Organic Carrots',
+    description: 'Fresh orange carrots, perfect for cooking',
+    price: 2.99,
+    originalPrice: 3.99,
+    image: '🥕',
+    category: 'Vegetables',
+    rating: 4.7,
+    reviews: 156,
+    inStock: true,
+  },
+  {
+    id: '4',
+    name: 'Greek Yogurt',
+    description: 'Creamy and delicious Greek yogurt',
+    price: 5.99,
+    image: '🥛',
+    category: 'Dairy',
+    rating: 4.9,
+    reviews: 312,
+    inStock: true,
+  },
+  {
+    id: '5',
+    name: 'Fresh Tomatoes',
+    description: 'Ripe and juicy tomatoes',
+    price: 3.49,
+    originalPrice: 4.49,
+    image: '🍅',
+    category: 'Vegetables',
+    rating: 4.5,
+    reviews: 128,
+    inStock: true,
+  },
+  {
+    id: '6',
+    name: 'Almond Butter',
+    description: 'Natural almond butter, no added sugar',
+    price: 8.99,
+    image: '🥜',
+    category: 'Pantry',
+    rating: 4.8,
+    reviews: 267,
+    inStock: true,
+  },
+  {
+    id: '7',
+    name: 'Fresh Broccoli',
+    description: 'Green and crispy broccoli',
+    price: 2.49,
+    image: '🥦',
+    category: 'Vegetables',
+    rating: 4.6,
+    reviews: 94,
+    inStock: true,
+  },
+  {
+    id: '8',
+    name: 'Organic Bananas',
+    description: 'Yellow and ripe bananas',
+    price: 1.99,
+    image: '🍌',
+    category: 'Fruits',
+    rating: 4.7,
+    reviews: 423,
+    inStock: true,
+  },
+  {
+    id: '9',
+    name: 'Honey',
+    description: 'Pure raw honey from local beekeepers',
+    price: 12.99,
+    image: '🍯',
+    category: 'Pantry',
+    rating: 4.9,
+    reviews: 178,
+    inStock: true,
+  },
+  {
+    id: '10',
+    name: 'Fresh Spinach',
+    description: 'Organic fresh spinach leaves',
+    price: 3.99,
+    image: '🥬',
+    category: 'Vegetables',
+    rating: 4.7,
+    reviews: 145,
+    inStock: true,
+  },
+  {
+    id: '11',
+    name: 'Cheddar Cheese',
+    description: 'Aged cheddar cheese block',
+    price: 7.99,
+    image: '🧀',
+    category: 'Dairy',
+    rating: 4.8,
+    reviews: 209,
+    inStock: true,
+  },
+  {
+    id: '12',
+    name: 'Fresh Eggs',
+    description: 'Dozen farm-fresh eggs',
+    price: 4.49,
+    image: '🥚',
+    category: 'Dairy',
+    rating: 4.9,
+    reviews: 356,
+    inStock: true,
+  },
+];
+
+export const CATEGORIES = [
+  'All',
+  'Fruits',
+  'Vegetables',
+  'Dairy',
+  'Bakery',
+  'Pantry',
+];
